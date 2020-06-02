@@ -64,7 +64,17 @@
                                 @endif
                             </div>
                         </div>
+
+
                     </form>
+
+<h3 class="text-center mt-3"> <span class="badge badge-dark text-white">Sign in with </span></h3>                    <div class="mt-3 text-center">
+                        <a type="button" href="{{ url('/auth/redirect/github') }}"  class="btn btn-outline-primary">github</a>
+<button type="button" class="btn btn-outline-secondary">Facebok</button>
+<button type="button" class="btn btn-outline-success">Gogle</button>
+<button type="button" class="btn btn-outline-info">Instragram</button>
+
+                    </div>
                 </div>
             </div>
         </div>

@@ -7,6 +7,11 @@
 <body>
 
 <div class="container">
+
+
+
+
+
     <div class="card bg-light mt-3">
         <div class="card-header">
             Laravel 6 Import Export Excel to database Example - ItSolutionStuff.com
@@ -20,7 +25,10 @@
                 <a class="btn btn-warning" href="{{ url('export') }}">Export User Data</a>
             </form>
         </div>
+
     </div>
+     <a class="btn btn-warning" href="{{ url('comment_import') }}">Export Comment Data</a>
+
 </div>
 
 </body>

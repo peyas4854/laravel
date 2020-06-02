@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-{{--    <example-component></example-component>--}}
 
-<post-component></post-component>
+
+<h1> UserName :  {{ Auth::user()->name }}</h1>
 
 @endsection

@@ -34,13 +34,5 @@ Route::post('/import', 'ImportController@import');
 Route::get('/comment_import', 'ImportController@CommentData');
 
 
-
-
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/auth/redirect/{provider}', 'SocialController@redirect');
+Route::get('/callback/{provider}', 'SocialController@callback');
