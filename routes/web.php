@@ -31,5 +31,16 @@ Route::get('/importExportview', 'ImportController@importExportview');
 Route::get('/export', 'ImportController@export');
 Route::post('/import', 'ImportController@import');
 
+Route::get('/comment_import', 'ImportController@CommentData');
 
 
+
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
