@@ -3,7 +3,8 @@
 @section('content')
 
 
-<h1> UserName :  {{ Auth::user()->name }}</h1>
-
+<div class="card">
+    <div class="card-body">UserName :  {{ Auth::user()->name }}</div>
+  </div>
 
 @endsection

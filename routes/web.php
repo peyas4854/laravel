@@ -35,3 +35,5 @@ Route::get('/comment_import', 'ImportController@CommentData');
 
 Route::get('/auth/redirect/{provider}', 'SocialController@redirect');
 Route::get('/callback/{provider}', 'SocialController@callback');
+
+Route::Resource('/chart', 'UserChartController');
