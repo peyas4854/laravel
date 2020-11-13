@@ -9,14 +9,17 @@ use App\User;
 
 class SocialController extends Controller
 {
+    //redirect to provider
     public function redirect($provider)
     {
         return Socialite::driver($provider)->redirect();
     }
-
+    //callback form provider api
     public function callback($provider)
     {
+
         $getInfo = Socialite::driver($provider)->user();
+
         $user = $this->createUser($getInfo, $provider);
         auth()->login($user);
         return redirect()->to('/home');
@@ -24,6 +27,7 @@ class SocialController extends Controller
 
     public function createUser($getInfo, $provider)
     {
+
         $user = User::where('provider_id', $getInfo->id)->first();
         //if no user found
         if (!$user) {
@@ -39,4 +43,5 @@ class SocialController extends Controller
 
 
     }
+
 }

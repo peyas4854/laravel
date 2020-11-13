@@ -32,8 +32,12 @@ Route::get('/export', 'ImportController@export');
 Route::post('/import', 'ImportController@import');
 
 Route::get('/comment_import', 'ImportController@CommentData');
-
+//github login
 Route::get('/auth/redirect/{provider}', 'SocialController@redirect');
+//redirect url in provider api . [set in service.app ]
 Route::get('/callback/{provider}', 'SocialController@callback');
-
+//google login
+//Route::get('auth/google', 'GoogleLoginController@redirectToGoogle');
+//Route::get('auth/google/callback', 'GoogleLoginController@handleGoogleCallback');
+//chart
 Route::Resource('/chart', 'UserChartController');
