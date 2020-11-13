@@ -24,8 +24,8 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" />
-        @if($usersChart)
-    {!! $usersChart->script() !!}
+        @if($usersChart ?? '')
+    {!! $usersChart ?? ''->script() !!}
     @endif
 </head>
 
