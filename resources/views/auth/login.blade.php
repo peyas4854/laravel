@@ -78,9 +78,10 @@
                         <h3 class="text-center mt-3"><span class="badge badge-dark text-white">Sign in with </span></h3>
                         <div class="mt-3 text-center">
                             <a type="button" href="{{ url('/auth/redirect/github') }}" class="btn btn-outline-primary">github</a>
-                            <button type="button" class="btn btn-outline-secondary">Facebok</button>
+                            <a type="button" href="{{ url('/auth/redirect/facebook') }}" class="btn btn-outline-secondary">Facebok</a>
                             <a type="button" href="{{ url('/auth/redirect/google') }}" class="btn btn-outline-success">Gogle</a>
                             <button type="button" class="btn btn-outline-info">Instragram</button>
+                            <button type="button" class="btn btn-outline-info">Twitter</button>
 
                         </div>
                     </div>

@@ -15,7 +15,12 @@
 
 ## Socialite
 
-<ul> <li> Github login  </li></ul>
+<ul> 
+<li> Github login  </li>
+<li> Google login  </li>
+<li> Facebook login ->localhost:8000 (htts not support)  </li>
+
+</ul>
 
 ## Google Recaptcha Api
 
