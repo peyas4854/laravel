@@ -80,6 +80,7 @@
                             <a type="button" href="{{ url('/auth/redirect/github') }}" class="btn btn-outline-primary">github</a>
                             <a type="button" href="{{ url('/auth/redirect/facebook') }}" class="btn btn-outline-secondary">Facebok</a>
                             <a type="button" href="{{ url('/auth/redirect/google') }}" class="btn btn-outline-success">Gogle</a>
+                            <a type="button" href="{{ url('/auth/redirect/linkedin') }}" class="btn btn-outline-success">Linkedin</a>
                             <button type="button" class="btn btn-outline-info">Instragram</button>
                             <button type="button" class="btn btn-outline-info">Twitter</button>
 

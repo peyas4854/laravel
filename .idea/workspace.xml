@@ -27,10 +27,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7192be70-8d54-440c-8b38-92614e8ff443" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/blog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/blog.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PDFController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PDFController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/myPDF.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/myPDF.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +80,6 @@
       <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
       <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
       <path value="$PROJECT_DIR$/vendor/nunomaduro/collision" />
-      <path value="$PROJECT_DIR$/vendor/erusev/parsedown" />
       <path value="$PROJECT_DIR$/vendor/facade/ignition" />
       <path value="$PROJECT_DIR$/vendor/facade/ignition-contracts" />
       <path value="$PROJECT_DIR$/vendor/scrivo/highlight.php" />
@@ -175,6 +181,8 @@
       <path value="$PROJECT_DIR$/vendor/consoletvs/charts" />
       <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
       <path value="$PROJECT_DIR$/vendor/maennchen/zipstream-php" />
+      <path value="$PROJECT_DIR$/vendor/ezyang/htmlpurifier" />
+      <path value="$PROJECT_DIR$/vendor/symfony/deprecation-contracts" />
     </include_path>
   </component>
   <component name="ProjectId" id="1Qm7JN4r12ib9jjoRxDwoTDPAMV" />
@@ -222,6 +230,8 @@
       <workItem from="1573733287246" duration="2126000" />
       <workItem from="1605282309752" duration="178000" />
       <workItem from="1605282511704" duration="7728000" />
+      <workItem from="1607794250402" duration="9000" />
+      <workItem from="1612078967662" duration="10810000" />
     </task>
     <servers />
   </component>
@@ -243,7 +253,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -255,10 +277,10 @@
       <screen x="-1920" y="-304" width="1920" height="1040" />
     </state>
     <state x="-1569" y="-226" width="1532" height="883" key="SettingsEditor/0.0.1366.728/-1920.-304.1920.1040@-1920.-304.1920.1040" timestamp="1605282605598" />
-    <state x="-1381" y="-299" width="840" height="1034" key="search.everywhere.popup" timestamp="1607197141491">
+    <state x="-1381" y="-299" width="840" height="1034" key="search.everywhere.popup" timestamp="1612108108155">
       <screen x="-1920" y="-304" width="1920" height="1040" />
     </state>
-    <state x="-1381" y="-299" width="840" height="1034" key="search.everywhere.popup/0.0.1366.728/-1920.-304.1920.1040@-1920.-304.1920.1040" timestamp="1607197141491" />
+    <state x="-1381" y="-299" width="840" height="1034" key="search.everywhere.popup/0.0.1366.728/-1920.-304.1920.1040@-1920.-304.1920.1040" timestamp="1612108108155" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

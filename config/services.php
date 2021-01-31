@@ -53,4 +53,10 @@ return [
         'redirect' => 'http://localhost:8000/callback/facebook',
     ],
 
+    'linkedin' => [
+        'client_id' => '868s9shnf7p24y',
+        'client_secret' => 'TavpvAWAs3J9DjVQ',
+        'redirect' => 'https://localhost:8000/callback/linkedin',
+    ],
+    
 ];
