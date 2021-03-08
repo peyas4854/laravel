@@ -13,14 +13,10 @@ use Illuminate\Support\Str;
 
 class PDFController extends Controller
 {
-
     public function generatepdf()
     {
-
         $data = ['title' => 'Demo tite'];
         $data["email"] = "peyas3500@gmail.com";
-
-
         if (config('filesystems.default') == 'public') {
             $path = realpath('storage/pdf/6p5vhto');
         } else {
@@ -34,7 +30,6 @@ class PDFController extends Controller
 
         });
         return 'send success';
-
 
     }
 }
