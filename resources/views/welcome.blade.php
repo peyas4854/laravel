@@ -119,9 +119,6 @@
             </div>
 
             <div>
-<h2>lkjdsf</h2>
-                <img src="{{ asset('/celt.png') }}" alt="">
-                <img src="{{ asset('storage/image/celt-logo.png') }}" alt="">
 
 
             </div>

@@ -19,11 +19,6 @@ class PDFController extends Controller
 
         $data = ['title' => 'Demo tite'];
         $data["email"] = "peyas3500@gmail.com";
-//        $pdf = PDF::loadView('myPDF', $data);
-//        $pdf_name = Str::random(7).'.pdf';
-//        Storage::put('public/pdf/'.$pdf_name, $pdf->output());
-//        $pdf_path = storage_path($pdf_name);
-          $psd_name = asset('pdf/6p5vhto');
 
 
         if (config('filesystems.default') == 'public') {
@@ -32,7 +27,6 @@ class PDFController extends Controller
             $path = Storage::url("pdf/6p5vhto'");
         }
 
-//======================
         Mail::send('myPDF', $data, function ($message) use ($data, $path) {
             $message->to($data["email"], $data["email"])
                 ->subject($data["title"])
