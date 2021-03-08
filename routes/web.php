@@ -11,6 +11,9 @@
 |
 */
 
+use Ladumor\OneSignal\OneSignal;
+
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -39,3 +42,12 @@ Route::get('/callback/{provider}', 'SocialController@callback');
 
 //chart
 Route::Resource('/chart', 'UserChartController');
+
+
+Route::get('/testing',function(){
+    $fields['include_player_ids'] = ['xxxxxxxx-xxxx-xxx-xxxx-yyyyy'];
+$message = 'hey!! This is a test push.!';
+OneSignal::sendPush($fields, $message);
+return 'sending success.';
+
+});

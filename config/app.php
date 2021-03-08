@@ -177,6 +177,8 @@ return [
         Barryvdh\DomPDF\ServiceProvider::class,
         Maatwebsite\Excel\ExcelServiceProvider::class,
         Laravel\Socialite\SocialiteServiceProvider::class,
+        Ladumor\OneSignal\OneSignalServiceProvider::class,
+
 
 
 
@@ -234,6 +236,8 @@ return [
         'PDF' => Barryvdh\DomPDF\Facade::class,
         'Excel' => Maatwebsite\Excel\Facades\Excel::class,
         'Socialite' => Laravel\Socialite\Facades\Socialite::class,
+        'OneSignal' => \Ladumor\OneSignal\OneSignal::class,
+
 
 
     ],

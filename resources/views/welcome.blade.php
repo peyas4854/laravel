@@ -13,6 +13,7 @@
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"/>
 
+
     <!-- Styles -->
     <style>
         html,
@@ -125,6 +126,15 @@
         </div>
     </div>
 </div>
+<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+<script>
+    window.OneSignal = window.OneSignal || [];
+    OneSignal.push(function() {
+        OneSignal.init({
+            appId: "de0ac1d7-9f90-4ca4-b208-c936d66f84f7",
+        });
+    });
+</script>
 </body>
 
 </html>
