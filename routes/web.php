@@ -45,6 +45,8 @@ Route::get('/callback/{provider}', 'SocialController@callback');
 //chart
 Route::Resource('/chart', 'UserChartController');
 
+Route::get('/nexmo-sms', 'SmsController@nexmo');
+
 
 Route::get('/sms',function(){
     $receiverNumber = '+8801677528939';
@@ -69,3 +71,5 @@ Route::get('/sms',function(){
     }
 
 });
+
+

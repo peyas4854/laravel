@@ -19,6 +19,7 @@
         "laravel/tinker": "^1.0",
         "laravel/ui": "^1.1",
         "maatwebsite/excel": "^3.1",
+        "nexmo/client": "^2.4",
         "twilio/sdk": "^6.18"
     },
     "require-dev": {

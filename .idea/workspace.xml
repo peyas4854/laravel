@@ -180,6 +180,13 @@
       <path value="$PROJECT_DIR$/vendor/symfony/deprecation-contracts" />
       <path value="$PROJECT_DIR$/vendor/ladumor/one-signal" />
       <path value="$PROJECT_DIR$/vendor/twilio/sdk" />
+      <path value="$PROJECT_DIR$/vendor/lcobucci/clock" />
+      <path value="$PROJECT_DIR$/vendor/lcobucci/jwt" />
+      <path value="$PROJECT_DIR$/vendor/nexmo/client-core" />
+      <path value="$PROJECT_DIR$/vendor/nexmo/client" />
+      <path value="$PROJECT_DIR$/vendor/vonage/nexmo-bridge" />
+      <path value="$PROJECT_DIR$/vendor/laminas/laminas-diactoros" />
+      <path value="$PROJECT_DIR$/vendor/laminas/laminas-zendframework-bridge" />
     </include_path>
   </component>
   <component name="ProjectId" id="1Qm7JN4r12ib9jjoRxDwoTDPAMV" />
@@ -229,7 +236,7 @@
       <workItem from="1605282511704" duration="7728000" />
       <workItem from="1607794250402" duration="9000" />
       <workItem from="1612078967662" duration="10810000" />
-      <workItem from="1615744855881" duration="2033000" />
+      <workItem from="1615744855881" duration="4047000" />
     </task>
     <servers />
   </component>
