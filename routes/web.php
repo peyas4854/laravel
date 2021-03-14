@@ -12,6 +12,8 @@
 */
 
 use Ladumor\OneSignal\OneSignal;
+use Twilio\Rest\Client;
+
 
 
 Route::get('/', function () {
@@ -44,10 +46,26 @@ Route::get('/callback/{provider}', 'SocialController@callback');
 Route::Resource('/chart', 'UserChartController');
 
 
-Route::get('/testing',function(){
-    $fields['include_player_ids'] = ['xxxxxxxx-xxxx-xxx-xxxx-yyyyy'];
-$message = 'hey!! This is a test push.!';
-OneSignal::sendPush($fields, $message);
-return 'sending success.';
+Route::get('/sms',function(){
+    $receiverNumber = '+8801677528939';
+    $message = "Hello!  Please turn off your room light before sleep.";
+
+
+    try {
+
+        $account_sid = 'ACde0284244296bb29515cb5ccdd19c404';
+        $auth_token = 'da9be20f4a8d6fa9428a802df8668293';
+        $twilio_number = '+14243757894';
+
+        $client = new Client($account_sid, $auth_token);
+        $client->messages->create($receiverNumber, [
+            'from' => $twilio_number,
+            'body' => $message]);
+
+        dd('SMS Sent Successfully.');
+
+    } catch (Exception $e) {
+        dd("Error: ". $e->getMessage());
+    }
 
 });
