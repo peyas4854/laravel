@@ -14,8 +14,6 @@
 use Ladumor\OneSignal\OneSignal;
 use Twilio\Rest\Client;
 
-
-
 Route::get('/', function () {
     return view('welcome');
 });
@@ -49,16 +47,12 @@ Route::get('/nexmo-sms', 'SmsController@nexmo');
 
 
 Route::get('/sms',function(){
-    $receiverNumber = '+8801677528939';
+    $receiverNumber = 'whatsapp:+8801677528939';
     $message = "Hello!  Please turn off your room light before sleep.";
-
-
     try {
-
-        $account_sid = 'ACde0284244296bb29515cb5ccdd19c404';
-        $auth_token = 'da9be20f4a8d6fa9428a802df8668293';
-        $twilio_number = '+14243757894';
-
+        $account_sid = 'ACf116f9b6eb5b14a201c3f448f0981d15';
+        $auth_token = '923ca86ac2b9ee470ffb56068cf04152';
+        $twilio_number = 'whatsapp:+14155238886';
         $client = new Client($account_sid, $auth_token);
         $client->messages->create($receiverNumber, [
             'from' => $twilio_number,
