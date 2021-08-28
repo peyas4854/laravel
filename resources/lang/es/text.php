@@ -1,7 +1,8 @@
 <?php
 return [
 
-    'introduction' => 'Spanish'
+    'Welcome' => 'Bienvenue',
+    'Login'=>'Login Spanish'
 
 ]
 ?>

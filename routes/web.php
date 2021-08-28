@@ -10,15 +10,18 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Auth::routes();
 Route::get('/', function () {
 
-    App::setLocale('en');
+//    App::setLocale('es');
 
     return view('welcome');
-});
+})->middleware('web');
 
-Auth::routes();
+Route::get('lang/{lang}', ['as' => 'lang.switch', 'uses' => 'LanguageController@switchLang']);
+
+
+
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/posts', 'PostController@index')->name('post');
