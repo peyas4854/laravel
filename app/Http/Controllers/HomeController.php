@@ -23,6 +23,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+
+         $path = storage_path('app/public/image/celt.png');
+
+        return view('home',compact('path'));
     }
 }
