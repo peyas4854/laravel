@@ -11,16 +11,13 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
     <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" />
+          href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"/>
 
-    <!-- Styles -->
     <style>
-        html,
-        body {
+        html, body {
             background-color: #fff;
             color: #636b6f;
-            font-family: 'Nunito', sans-serif;
-            font-weight: 200;
+            font-weight: 100;
             height: 100vh;
             margin: 0;
         }
@@ -53,10 +50,10 @@
             font-size: 84px;
         }
 
-        .links>a {
+        .links > a {
             color: #636b6f;
             padding: 0 25px;
-            font-size: 13px;
+            font-size: 12px;
             font-weight: 600;
             letter-spacing: .1rem;
             text-decoration: none;
@@ -70,55 +67,44 @@
 </head>
 
 <body>
-    <div class=" position-ref full-height">
-        @if (Route::has('login'))
+<div class="flex-center position-ref full-height">
+
+    @if (Route::has('login') && Auth::check())
         <div class="top-right links">
-            @auth
-            <a href="{{ url('/home') }}">Home</a>
-            @else
-            <a href="{{ route('login') }}">Login</a>
-
-            @if (Route::has('register'))
-            <a href="{{ route('register') }}">Register</a>
-            @endif
-            @endauth
+            <a href="{{ url('/home') }}">Dashboard</a>
         </div>
-        @endif
+    @elseif (Route::has('login') && !Auth::check())
+        <div class="top-right links">
+            <a href="{{ url('/login') }}">Login</a>
+            <a href="{{ url('/register') }}">Register</a>
+        </div>
+    @endif
 
-        <div class="">
-            <div class="title m-b-md">
-                <h4>Laravel</h4>
+    <div class="content">
+        <div class="title m-b-md">
+            {{ __('text.introduction') }}
+
+        </div>
+        <div class="card bg-light mt-3">
+            <div class="card-header">
+                Laravel 6 Import Export Excel to database Example
             </div>
+            <div class="card-body" style="width:400px">
+                <form action="{{ url('import') }}" method="POST" enctype="multipart/form-data">
+                    @csrf
+                    <input type="file" name="file" class="form-control">
+                    <br>
+                    <button class="btn btn-success">Import User Data</button>
+                    <a class="btn btn-warning" href="{{ url('export') }}">Export User Data</a>
+                </form>
+                <a class="btn btn-success mt-3" href="{{ url('comment_import') }}">Export Comment
+                    Data</a>
 
-            <div class="links">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-
-                            <div class="card bg-light mt-3">
-                                <div class="card-header">
-                                    Laravel 6 Import Export Excel to database Example - ItSolutionStuff.com
-                                </div>
-                                <div class="card-body" style="width:400px">
-                                    <form action="{{ url('import') }}" method="POST" enctype="multipart/form-data">
-                                        @csrf
-                                        <input type="file" name="file" class="form-control">
-                                        <br>
-                                        <button class="btn btn-success">Import User Data</button>
-                                        <a class="btn btn-warning" href="{{ url('export') }}">Export User Data</a>
-                                    </form>
-                                    <a class="btn btn-success mt-3" href="{{ url('comment_import') }}">Export Comment
-                                        Data</a>
-
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
+
     </div>
+</div>
 </body>
 
 </html>
